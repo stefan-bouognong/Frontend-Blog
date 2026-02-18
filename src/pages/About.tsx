@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Layout } from '@/components/layout/Layout';
-import { FounderImage } from '@/components/FounderImage';
+import  founderImage  from '@/images/eliade.jpeg';
 import { Target, BookOpen, Scale, MessageSquare } from 'lucide-react';
 
 const About = () => {
@@ -16,9 +16,15 @@ const About = () => {
           >
             {/* Header with Founder Image */}
             <div className="text-center mb-16">
-              <div className="flex justify-center mb-8">
-                <FounderImage variant="about" className="max-w-xs" />
-              </div>
+            <div className="flex justify-center mb-8">
+              <img
+                src={founderImage}
+                alt="Eliade Kibangoud Mboungou"
+                className="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover shadow-xl ring-4 ring-primary/20"
+              />
+
+            </div>
+
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                 À propos du blog
               </h1>

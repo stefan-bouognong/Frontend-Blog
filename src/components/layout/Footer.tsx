@@ -1,11 +1,22 @@
 import { Link } from 'react-router-dom';
-import { Twitter, Linkedin, Instagram, MessageCircle } from 'lucide-react';
+import { Twitter, Instagram, Facebook } from 'lucide-react';
 
 const socialLinks = [
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' },
-  { icon: MessageCircle, href: 'https://wa.me/', label: 'WhatsApp' },
+  { 
+    icon: Facebook, 
+    href: 'https://www.facebook.com/eliadenumber1', 
+    label: 'Facebook' 
+  },
+  { 
+    icon: Instagram, 
+    href: 'https://www.instagram.com/eliade_kibangoudmboungou', 
+    label: 'Instagram' 
+  },
+  { 
+    icon: Twitter,
+    href: 'https://x.com/Eliade_K_M', 
+    label: 'X' 
+  },
 ];
 
 export function Footer() {
@@ -13,6 +24,7 @@ export function Footer() {
     <footer className="border-t border-border mt-20">
       <div className="container mx-auto px-6 py-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          
           {/* Admin discret */}
           <Link
             to="/admin"

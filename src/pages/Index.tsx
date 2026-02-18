@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Layout } from '@/components/layout/Layout';
 import { BlogCard } from '@/components/blog/BlogCard';
-import { FounderImage } from '@/components/FounderImage';
+import  founderImage  from '@/images/eliade.jpeg';
 import { useBlog } from '@/context/BlogContext';
 import { cn } from '@/lib/utils';
 
@@ -55,7 +55,12 @@ const Index = () => {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-            <FounderImage variant="hero" />
+          <img
+          src={founderImage}
+          alt="Eliade Kibangoud Mboungou"
+          className="w-48 h-48 md:w-60 md:h-60 rounded-full object-cover shadow-xl ring-4 ring-primary/20"
+        />
+
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}

@@ -86,7 +86,7 @@ export function BlogProvider({ children, token: initialToken }: { children: Reac
       deleteArticle,
       getArticle,
       refreshArticles,
-      getLatestArticles, // ✅ ajouté ici
+      getLatestArticles, 
     }}>
       {children}
     </BlogContext.Provider>
