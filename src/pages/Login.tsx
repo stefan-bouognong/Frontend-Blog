@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button';
 
 const Login = () => {
   const { setToken } = useBlog(); // permet de stocker le token dans le contexte
-  const [username, setUsername] = useState('admin'); // par défaut 'admin'
-  const [password, setPassword] = useState('admin123'); // par défaut 'admin123'
+  const [username, setUsername] = useState(''); // par défaut 'admin'
+  const [password, setPassword] = useState(''); // par défaut 'admin123'
   const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent) => {
